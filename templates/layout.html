@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css')}}">
+      <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+      <title>Hostel Management System</title>
+  </head>
+  <body>
+    <nav>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/logo1.png')}}" class="logo_img" alt="">
+      <a href="/"><i>HMS</i></a>
+  </div>
+  <div class="menubar">
+    <ul class="menubar_1">
+
+        {% if session.log %}
+        <li class="lia"><a  href="/logout"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Logout</a></li>
+        {% else %}
+        <li class="lia"><a  href="/register"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Register</a></li>
+        <li class="lia lia2"><a  href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        {% endif %}
+    </ul>
+  </div>
+    </nav>
+    {% include "includes/messages.html" %}
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>

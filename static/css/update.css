@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height:700px;
+    width:100%;
+    background-color: #e6e7ee;
+}
+.update_style{
+    height:600px;
+    width:100%;
+   
+    position: relative;
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-30%);
+}
+.update_name{
+    height:60px;
+    width:30%;
+    border:1px solid #D1D9E6;
+    text-align: center;
+
+}
+.back_dashboard{
+    height:40px;
+    width:10%;
+    position: relative;
+    left:95%;
+    top:1%;
+    transform:translate(-95%,-1%);
+  
+    
+}
+.back_dashboard_0{
+    
+    border:1px solid #D1D9E6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #b8b9be, -3px -3px 6px #ffffff !important;
+    padding-bottom:20px;
+    text-decoration: none;
+    color: #44476a;
+}
+
+form{
+    height:520px;
+    width:50%;
+    
+    margin: 1.35rem .5rem;
+    /*box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff !important;*/
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;
+    padding:30px 20px;
+    border-radius: 0.55rem;
+  }
+  h1{
+   
+      font-weight: 100;
+      color: #44476a;
+  }
+  .candidate-name{
+    height:40px;
+    width:100%;
+  
+    position: relative;
+    margin-bottom:1rem;
+    text-align: center;
+  }
+  .candidate_name_1{
+    height:30px;
+    width:70%;
+
+  }
+
+  .form_control{
+    font-size: 1.25rem;
+        border-radius: 0.55rem;
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+  
+            width:50%;
+          /*  height: calc(1.5em + 1.2rem + 0.0625rem);*/
+            padding: 0.5rem 0.55rem;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #44476A;
+            background-color: #e6e7ee;
+            background-clip: padding-box;
+            border: 0.0625rem solid #D1D9E6;
+            border-radius: 0.55rem;
+            box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+          /*  transition: all 0.3s ease-in-out;*/
+  
+  }
+ 
+ 
+  .style_label{
+    font-weight: 400;
+    font-size: 1.25rem;
+display: inline-block;
+margin-bottom: 0.5rem;
+  cursor: default;
+  margin-top: 13px;
+      color: #31344b;
+
+
+
+}
+.update_btn{
+    height:50px;
+    width:100px;
+  
+    margin-left:80%;
+    margin-top:40px;
+}
+.update_btn_style{
+    height:50px;
+    width:90px;
+    border-radius:10px;
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff !important;
+    border:none;
+}
+input
+{
+cursor:pointer;
+}

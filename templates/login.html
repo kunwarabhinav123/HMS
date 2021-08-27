@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<section>
+
+    <div class="container_1">
+      <div class="left_sub_container_1">
+        <div class="image_login">
+    <img src="{{ url_for('static', filename='images/signin-image.png')}}" class="signin-image" alt="">
+    <p class="p_1">Not registered?&nbsp;<a href="/join.html" class="account">Create account</a></p>
+        </div>
+
+      </div>
+      <div class="left_sub_container_1 left_sub_container_1_1">
+    <div class="content_1">
+        &nbsp;&nbsp;&nbsp;&nbsp;<h4><u>Sign in to Hostel Management System</u></h4>
+    </div>
+    <div class="signcard">
+      <form class="form-main" action="/login" method="POST">
+        <div class="form-group">
+          <label for="username"><h4><u>Username:</u></h4></label>
+          <div class="username_style mb4">
+            <div class="username_font"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <input type="text" name="username"  placeholder="Username" class=" form-control username_text" value="">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="username"><h4><u>Password:</u></h4></label>
+          <div class="username_style mb4">
+            <div class="username_font"><i class="fa fa-lock" aria-hidden="true"></i></div>&nbsp;
+        <input type="password" name="password"  placeholder="Password" class=" form-control " value="">
+          </div>
+        </div>
+
+        <button  class="btn" type="submit" >Sign in</button>
+      </form>
+
+    </div>
+      </div>
+
+    </div>
+</section>
+{% endblock %}

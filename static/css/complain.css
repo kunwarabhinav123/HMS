@@ -1,0 +1,22 @@
+h1
+{
+font-weight:100;
+color:#444768;
+}
+.p1
+{
+height:80px;
+width:40%;
+border:1px solid #d1d9e6;
+margin:1.35rem 0.5rem;
+text-align:center;
+}
+input
+{
+position:relative;
+top:10%;
+left:10%;
+transform:translate(-10%,-10%);
+outline:none;
+cursor:default;
+}

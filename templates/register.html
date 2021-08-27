@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+{% block body %}
+    <header>
+    <div class="container_2">
+      <div class="alignment_form_style">
+        <div class="heading_text">
+          <h2 class="heading-text_style">Registration Form : </h2>
+        </div>
+
+    <form class="form_reg" action="/register" method="POST">
+
+        <div class="candidate_name">
+          <div class="candidate_name_1">
+
+            <label for="first_name" class="style_label">Username :</label>&nbsp;&nbsp;
+            <input type="text" name="username"  placeholder="Username" value="" class="form_control" required>
+
+          </div>
+
+        </div>
+        <div class="candidate_name">
+          <div class="candidate_name_1">
+              <label for="first_name" class="style_label">Name :</label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+              <input type="text" name="name"  placeholder="Name" value="" class="form_control" required>
+          </div>
+
+        </div>
+        <div class="candidate_name">
+          <div class="candidate_name_1">
+
+            <label for="first_name" class="style_label">Father Name :</label>&nbsp;
+            <input type="text" name="father_name"  placeholder="Father Name" value="" class="form_control" required>
+
+          </div>&nbsp
+        </div>
+
+        <div class="candidate_name">
+          <div class="candidate_name_1">&nbsp;&nbsp;
+              <label for="first_name" class="style_label">Date of Birth :</label>&nbsp;&nbsp;
+              <input type="date" name="dob" value="" placeholder="select" class="form_control" required>
+
+          </div>
+
+        </div>  
+
+        <div class="candidate_name">
+          <div class="candidate_name_1">
+
+            <label for="first_name" class="style_label">Password :</label>&nbsp;&nbsp;
+            <input type="password" name="password"  placeholder="Password" value="" class="form_control" required>
+
+          </div>
+        </div>
+        <div class="candidate_name">
+          <div class="candidate_name_1">
+              <label for="first_name" class="style_label">Confirm Password :</label>&nbsp; &nbsp;
+              <input type="password" name="confirm"  placeholder="Confirm Password" value="" class="form_control" required>
+          </div>
+
+        </div>
+
+
+       
+
+        <div class="candidate_name join as">
+            <div class="candidate_name_1">
+            <label for="joining" class="style_label">You are a :</label>
+            <label for="joining" class="style_choice ">Student</label>
+            <input type="radio" name="user" value="Student" class="radio_choice form-check-input" required>
+            </div>
+        </div>
+
+        <div class="candidate_name">
+          <div class="mail">
+            <label for="Email" class="style_label">E-mail :</label>&nbsp;&nbsp;
+            <input type="text" name="email" class="form_control" placeholder="example@gmail.com" value="" required>
+          </div>
+        </div>
+        <div class="candidate_name">
+          <div class="mob">
+            <label for="mob" class="style_label">Mobile No :</label>&nbsp;&nbsp;
+            <input type="number" name="mob" value="" maxlength="10" placeholder="Registered Mobile Number" class="form_control" required>
+          </div>
+
+        </div>
+
+        <div class="candidate_name">
+          <div class="course">
+        <label for="course" class="style_label">Course :</label>&nbsp;&nbsp;
+        <select name="course" id="cars" class="study_info_style" required>
+          <option value="none">select</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="MCA">MCA</option>
+          <option value="M.Tech">M.Tech</option>
+            <option value="P.hd">P.hd</option>
+        </select>
+          </div>
+        <div class="year">
+          <label for="year" class="style_label">Year :</label>&nbsp;&nbsp;
+          <select name="year" id="year" class="study_info_style" required>
+          <option value="none">select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        </div>
+            <div class="hostel">
+          <label for="hostel" class="style_label">Hostel :</label>&nbsp;&nbsp;
+          <select name="hostel" id="hostel" class="study_info_style" required>
+          <option value="none">select</option>
+          <option value="Aryabhatta">Aryabhatta</option>
+          <option value="Vikram Sarabhai">Vikram Sarabhai</option>
+        </select>
+
+        </div>
+            <div class="branch">
+          <label for="branch" class="style_label">Branch :</label>&nbsp;&nbsp;
+          <select name="branch" id="Branch" class="study_info_style" required>
+          <option value="none">select</option>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="CIVIL ENG.">CIVIL ENG.</option>
+          <option value="MECHANICAL ENG.">MECHANICAL ENG.</option>
+        </select>
+
+        </div>
+        </div>
+
+        <button type="submit"  class="btn_1">Submit</button>
+
+    </form>
+
+      </div>
+
+    </div>
+
+    </header>
+{% endblock %}

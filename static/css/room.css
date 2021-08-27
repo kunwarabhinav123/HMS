@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    height:800px;
+    width:100%;
+ background-color:#e6e7ee;
+}
+.room_style{
+    height:100px;
+    width:50%;
+    position: relative;
+    left:50%;
+    top:2%;
+    transform: translate(-50%,-2%);
+    text-align:center;
+    box-shadow: 2px 2px 5px #b8b9be, -2px -2px 2px #ffffff !important;
+    border-radius:10px;
+    color: #44476a;
+}
+h1{
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.room_alloment{
+    height:500px;
+    width:95%;
+    /*border:1px solid black;*/
+    position: relative;
+    left:50%;
+    top:15%;
+    transform:translate(-50%,-15%);
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;
+    padding-top:5px;
+
+}
+.room_number_0{
+    height:50px;
+    width:95%;
+    /*border:1px solid black;*/
+    margin:10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px #b8b9be, -2px -2px 2px #ffffff !important;
+
+
+}
+.room_number_1{
+    height:30px;
+    width:10%;
+    padding:5px;
+    border:1px solid black;
+    border-color: #D1D9E6;
+    box-shadow: 2px 2px 5px #b8b9be, -2px -2px 2px #ffffff !important;
+    margin-right:10px;
+}
+input{
+    margin-top:7.5px;
+    margin-left:13px;
+    
+}
+.room_submit{
+    height:60px;
+    width:100px;
+   
+    
+    margin-left:87%;
+    margin-top:10px;
+    
+}
+.room_submit_style{
+    height:60px;
+    width:100px;
+    background-color:#e6e7ee;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff !important;
+    margin: 20px;
+    padding:10px;
+    font-size: 15px;
+}
+.back_dashboard{
+    height:40px;
+    width:10%;
+    position: relative;
+    left:95%;
+    top:1%;
+    transform:translate(-95%,-1%);
+  
+    
+}
+.back_dashboard_0{
+    
+    border:1px solid #D1D9E6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #b8b9be, -3px -3px 6px #ffffff !important;
+    padding-bottom:20px;
+    text-decoration: none;
+    color: #44476a;
+}
+input
+{
+cursor:pointer;
+}

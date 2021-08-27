@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-color:#e6e7ee;
+  }
+  main{
+    width:100%;
+    height: 700px;
+    border:1px solid black;
+    display: flex;
+  justify-content: space-between;
+  }
+  .lhs{
+  width:20%;
+  height:650px;
+  border:3px solid red;
+    border-color: #D1D9E6;
+  
+  position:relative;
+  margin-top: 20px;
+  margin-left: 10px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  border-radius: 20px;
+  }
+  .rhs{
+  width: 75%;
+  height:650px;
+  background-color: #e6e7ee;
+  position:relative;
+  margin-top: 20px;
+  margin-right: 20px;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;
+  border-radius: 20px;
+  /*box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;*/
+  
+  }
+  
+  .profile{
+    height: 150px;
+    width:60%;
+    margin-left: 20%;
+    margin-top: 30px;
+    /*border: 1px solid black;*/
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  border-radius: 1rem;
+  border-color: #D1D9E6;
+  padding: 10px;
+  }
+  .profile_img
+  {
+    height:70px;
+      width: 70px;
+      border:2px solid black;
+    margin:0 auto 10px;
+      display: block;
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+        border-color: #D1D9E6;
+        border-radius: 50px;
+  
+        margin-bottom: 1rem;
+  }
+   .profile_img img
+  {
+      width: 100%;
+  
+  }
+  .profile_info{
+    height: 50px;
+    width:100%;
+    text-align: center;
+    margin-bottom: .55rem;
+  }
+  .avatar_name, .avatar_branch{
+  
+        font-size: 17px;
+        text-transform: capitalize;
+        font-weight: 800;
+        color: #30373f;
+  }
+  .avatar_branch{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  
+  
+  
+  .menu_bar2{
+    height: 400px;
+    width:70%;
+    margin-left:20%;
+    border:1px solid black;
+    margin-top: 30px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  border-radius: 1rem;
+  border-color: #D1D9E6;
+  list-style-type: none;
+    font-size: 13px;
+    display:inline-block;
+    justify-content:space-around;
+    align-items: center;
+  
+  }
+  .lia{
+    width:70%;
+   border:1px solid black;
+    padding:10px;
+    margin:10px;
+    position: relative;
+    /*  transition: all 0.2s ease;*/
+      letter-spacing: 0.025em;
+      font-size: 1rem;
+      border-color: #D1D9E6;
+      /*box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;*/
+  list-style-type:none;
+      background-color: #e6e7ee;
+      text-align: center;
+  vertical-align: middle;
+      line-height: 1.5;
+      border-radius: 0.55rem;
+  cursor: pointer;
+  }
+  .menu_bar2 a{
+    text-decoration: none;
+      color:#31344b;
+  
+      cursor: pointer;
+  }
+  .lia:hover {
+    border-color: #D1D9E6 !important;
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important
+  
+  
+  
+  }
+  h2{
+      font-family: sans-serif;
+      font-weight: 200;
+      color:#31344b;
+  }
+
+  .hostel_name{
+      height:100px;
+      width:40%;
+      border:1px solid black;
+      margin:50px;
+      padding:10px;
+  }
+  ul{
+      
+  }
+  li{
+      width:50%;
+      /*border:1px solid black;*/
+    line-height: 1.5;
+    margin-left:20px;
+    margin-top: 10px;
+  }
+  a{
+      text-decoration: none;
+  }

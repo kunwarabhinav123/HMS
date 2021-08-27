@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/wardenregister.css')}}">
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+<main>
+  <div class="lhs">
+  <div class="profile">
+<div class="profile_img">
+  <img src="{{ url_for('static', filename='/images/uploads/'+filename)}}" alt="">
+</div>
+<div class="profile_info">
+  <h2 class="avatar_name">Admin</h2>
+
+</div>
+   </div>
+
+   <div class="menu_bar2">
+     <ul class="hms_links_style">
+       <li  class="lia"><a href="/wardenreg"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Warden Registration</a></li>
+       <li  class="lia"><a href="/queryall"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;Hostel</a></li>
+       <li  class="lia"><a href="/query"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student Query</a></li>
+         <li  class="lia"><a href="/logout"><i class="fa fa-cog fa-spin"></i>&nbsp;Logout</a></li>
+     </ul>
+   </div>
+
+
+ </div>
+  <div class="rhs">
+
+    <header>
+        <div class="container_2">
+          <div class="alignment_form_style">
+            <div class="heading_text">
+              <h2 class="heading-text_style">Registration Form : </h2>
+            </div>
+
+        <form class="form_reg" action="/wardenreg" method="POST">
+
+            <div class="candidate_name">
+              <div class="candidate_name_1">
+
+                <label for="first_name" class="style_label">Username :</label>&nbsp;&nbsp;
+                <input type="text" name="username"  placeholder="Username" value="" class="form_control" required>
+
+              </div>
+
+            </div>
+            <div class="candidate_name">
+              <div class="candidate_name_1">
+                  <label for="first_name" class="style_label">Name :</label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                  <input type="text" name="name"  placeholder="Name" value="" class="form_control" required>
+              </div>
+
+            </div>
+
+
+            <div class="candidate_name">
+              <div class="candidate_name_1">
+
+                <label for="first_name" class="style_label">Password :</label>&nbsp;&nbsp;
+                <input type="password" name="password"  placeholder="Password" value="" class="form_control" required>
+
+              </div>
+            </div>
+            <div class="candidate_name">
+              <div class="candidate_name_1">
+                  <label for="first_name" class="style_label">Confirm Password :</label>&nbsp; &nbsp;
+                  <input type="password" name="confirm"  placeholder="Confirm Password" value="" class="form_control" required>
+              </div>
+
+            </div>
+            <div class="candidate_name">
+                <div class="hostel">
+                  <label for="hostel" class="style_label">Hostel :</label>&nbsp;&nbsp;
+                  <select name="hostel" id="hostel" class="study_info_style" required>
+                  <option value="none">Select</option>
+                  <option value="Aryabhatta hostel">Aryabhatta hostel</option>
+                  <option value="Vikram Sarabhai hostel">Vikram Sarabhai hostel</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="candidate_name">
+              <div class="mail">
+                <label for="Email" class="style_label">E-mail :</label>&nbsp;&nbsp;
+                <input type="text" name="email" class="form_control" placeholder="example@gmail.com" value="" required>
+              </div>
+            </div>
+            <div class="candidate_name">
+              <div class="mob">
+                <label for="mob" class="style_label">Mobile No :</label>&nbsp;&nbsp;
+                <input type="number" name="mob" value="" placeholder="Registered Mobile Number" maxlength="10" class="form_control" required>
+              </div>
+
+            </div>
+
+            <button type="submit"  class="btn_1">Submit</button>
+
+        </form>
+
+          </div>
+
+        </div>
+
+        </header>
+
+  </div>
+</main>
+  {% include "includes/messages.html" %}
+  </body>
+</html>

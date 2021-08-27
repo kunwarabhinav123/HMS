@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/hostel.css')}}">
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+<main>
+  <div class="lhs">
+  <div class="profile">
+<div class="profile_img">
+  <img src="{{ url_for('static', filename='/images/uploads/'+filename)}}" alt="">
+</div>
+<div class="profile_info">
+  <h2 class="avatar_name">Admin</h2>
+
+</div>
+   </div>
+
+
+   <div class="menu_bar2">
+     <ul class="hms_links_style">
+         <li  class="lia"><a href="/wardenreg"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Warden Registration</a></li>
+       <li  class="lia"><a href="/queryall"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;Hostel</a></li>
+       <li  class="lia"><a href="/query"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student Query</a></li>
+         <li  class="lia"><a href="/logout"><i class="fa fa-cog fa-spin"></i>&nbsp;Logout</a></li>
+     </ul>
+   </div>
+
+ </div>
+  <div class="rhs">
+                <div class="hostel_name">
+                    <h2><u>Hostels:</u></h2>
+                    <ul>
+                        <li><a href="/hostel_info1"><u>Aryabhatta Hostel</u></a></li>
+                        <li><a href="/hostel_info2"><u>Vikram Sarabhai Hostel</u></a></li>
+                    </ul>
+                </div>
+  </div>
+</main>
+  {% include "includes/messages.html" %}
+  </body>
+</html>
